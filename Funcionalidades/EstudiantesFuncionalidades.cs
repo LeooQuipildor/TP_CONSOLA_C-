@@ -196,6 +196,70 @@ namespace Funcionalidades
         }
 
 
+        public static void EliminarEstudiante()
+        {
+            Console.Clear();
+            Console.WriteLine("=== Eliminar Estudiante ===");
+            Console.WriteLine("1. Buscar por DNI");
+            Console.WriteLine("2. Buscar por Apellido");
+            Console.Write("Seleccione una opción: ");
+            string opcion = Console.ReadLine();
+
+            List<Estudiante> estudiantes = JsonHelper.LeerDesdeJson<Estudiante>(rutaArchivo);
+            if (estudiantes.Count == 0)
+            {
+                Console.WriteLine("No hay estudiantes registrados.");
+                return;
+            }
+
+            Estudiante encontrado = null;
+
+            switch (opcion)
+            {
+                case "1":
+                    Console.Write("Ingrese el DNI: ");
+                    string dni = Console.ReadLine();
+                    encontrado = estudiantes.FirstOrDefault(e => e.DNI == dni);
+                    break;
+                case "2":
+                    Console.Write("Ingrese el Apellido: ");
+                    string apellido = Console.ReadLine();
+                    encontrado = estudiantes.FirstOrDefault(e => e.Apellido.Equals(apellido, StringComparison.OrdinalIgnoreCase));
+                    break;
+                default:
+                    Console.WriteLine("Opción inválida.");
+                    return;
+            }
+
+            if (encontrado == null)
+            {
+                Console.WriteLine("Estudiante no encontrado.");
+                return;
+            }
+
+            Console.WriteLine("\nEstudiante encontrado:");
+            Console.WriteLine($"DNI: {encontrado.DNI}");
+            Console.WriteLine($"Apellido: {encontrado.Apellido}");
+            Console.WriteLine($"Nombre: {encontrado.Nombre}");
+            Console.WriteLine($"Correo: {encontrado.Correo}");
+
+            Console.Write("\n¿Desea eliminar este estudiante? (SI/NO): ");
+            string confirmar = Console.ReadLine().ToUpper();
+
+            if (confirmar == "SI")
+            {
+                estudiantes.Remove(encontrado);
+                JsonHelper.GuardarEnJson(estudiantes, rutaArchivo);
+                Console.WriteLine("Estudiante eliminado con éxito.");
+            }
+            else
+            {
+                Console.WriteLine("Operación cancelada.");
+            }
+        }
+
+
+
 
     }
 }

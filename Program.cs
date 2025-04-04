@@ -11,7 +11,8 @@ class Program
             Console.WriteLine("1. Alta de estudiante");
             Console.WriteLine("2. Buscar estudiante");
             Console.WriteLine("3. Modificar estudiante");
-            Console.WriteLine("4. Salir");
+            Console.WriteLine("4. Eliminar estudiante");
+            Console.WriteLine("5. Salir");
             Console.Write("Seleccione una opción: ");
             string opcion = Console.ReadLine();
             Console.Clear();
@@ -28,6 +29,9 @@ class Program
                     EstudiantesFuncionalidades.ModificarEstudiante();
                     break;
                 case "4":
+                    EstudiantesFuncionalidades.EliminarEstudiante();
+                    break;
+                case "5":
                     return;
                 default:
                     Console.WriteLine("Opción inválida.");
