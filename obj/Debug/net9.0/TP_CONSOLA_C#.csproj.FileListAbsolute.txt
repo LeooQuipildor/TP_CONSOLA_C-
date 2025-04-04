@@ -1,0 +1,17 @@
+C:\Users\leand\OneDrive\Escritorio\Visual Studio Codee\Tecnicatura\Programacion3\TP_CONSOLA_C#\obj\Debug\net9.0\TP_CONSOLA_C#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leand\OneDrive\Escritorio\Visual Studio Codee\Tecnicatura\Programacion3\TP_CONSOLA_C#\obj\Debug\net9.0\TP_CONSOLA_C#.AssemblyInfoInputs.cache
+C:\Users\leand\OneDrive\Escritorio\Visual Studio Codee\Tecnicatura\Programacion3\TP_CONSOLA_C#\obj\Debug\net9.0\TP_CONSOLA_C#.AssemblyInfo.cs
+C:\Users\leand\OneDrive\Escritorio\Visual Studio Codee\Tecnicatura\Programacion3\TP_CONSOLA_C#\obj\Debug\net9.0\TP_CONSOLA_C#.csproj.CoreCompileInputs.cache
+C:\Users\leand\OneDrive\Escritorio\Visual Studio Codee\Tecnicatura\Programacion3\TP_CONSOLA_C#\obj\Debug\net9.0\TP_CONSOLA_C#.csproj.AssemblyReference.cache
+C:\Users\leand\OneDrive\Escritorio\Visual Studio Codee\Tecnicatura\Programacion3\TP_CONSOLA_C#\bin\Debug\net9.0\TP_CONSOLA_C#.exe
+C:\Users\leand\OneDrive\Escritorio\Visual Studio Codee\Tecnicatura\Programacion3\TP_CONSOLA_C#\bin\Debug\net9.0\TP_CONSOLA_C#.deps.json
+C:\Users\leand\OneDrive\Escritorio\Visual Studio Codee\Tecnicatura\Programacion3\TP_CONSOLA_C#\bin\Debug\net9.0\TP_CONSOLA_C#.runtimeconfig.json
+C:\Users\leand\OneDrive\Escritorio\Visual Studio Codee\Tecnicatura\Programacion3\TP_CONSOLA_C#\bin\Debug\net9.0\TP_CONSOLA_C#.dll
+C:\Users\leand\OneDrive\Escritorio\Visual Studio Codee\Tecnicatura\Programacion3\TP_CONSOLA_C#\bin\Debug\net9.0\TP_CONSOLA_C#.pdb
+C:\Users\leand\OneDrive\Escritorio\Visual Studio Codee\Tecnicatura\Programacion3\TP_CONSOLA_C#\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\leand\OneDrive\Escritorio\Visual Studio Codee\Tecnicatura\Programacion3\TP_CONSOLA_C#\obj\Debug\net9.0\TP_CONSO.E7EDF434.Up2Date
+C:\Users\leand\OneDrive\Escritorio\Visual Studio Codee\Tecnicatura\Programacion3\TP_CONSOLA_C#\obj\Debug\net9.0\TP_CONSOLA_C#.dll
+C:\Users\leand\OneDrive\Escritorio\Visual Studio Codee\Tecnicatura\Programacion3\TP_CONSOLA_C#\obj\Debug\net9.0\refint\TP_CONSOLA_C#.dll
+C:\Users\leand\OneDrive\Escritorio\Visual Studio Codee\Tecnicatura\Programacion3\TP_CONSOLA_C#\obj\Debug\net9.0\TP_CONSOLA_C#.pdb
+C:\Users\leand\OneDrive\Escritorio\Visual Studio Codee\Tecnicatura\Programacion3\TP_CONSOLA_C#\obj\Debug\net9.0\TP_CONSOLA_C#.genruntimeconfig.cache
+C:\Users\leand\OneDrive\Escritorio\Visual Studio Codee\Tecnicatura\Programacion3\TP_CONSOLA_C#\obj\Debug\net9.0\ref\TP_CONSOLA_C#.dll
