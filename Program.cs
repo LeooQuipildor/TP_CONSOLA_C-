@@ -12,7 +12,8 @@ class Program
             Console.WriteLine("2. Buscar estudiante");
             Console.WriteLine("3. Modificar estudiante");
             Console.WriteLine("4. Eliminar estudiante");
-            Console.WriteLine("5. Salir");
+            Console.WriteLine("5. Sorteo de estudiante");
+            Console.WriteLine("6. Salir");
             Console.Write("Seleccione una opción: ");
             string opcion = Console.ReadLine();
             Console.Clear();
@@ -32,6 +33,9 @@ class Program
                     EstudiantesFuncionalidades.EliminarEstudiante();
                     break;
                 case "5":
+                    EstudiantesFuncionalidades.SorteoEstudiante();
+                    break;
+                case "6":
                     return;
                 default:
                     Console.WriteLine("Opción inválida.");

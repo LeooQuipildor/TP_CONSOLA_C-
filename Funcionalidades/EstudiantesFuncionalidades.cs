@@ -259,6 +259,52 @@ namespace Funcionalidades
         }
 
 
+        public static void SorteoEstudiante()
+{
+    Console.Clear();
+    Console.WriteLine("=== Sorteo de Estudiante ===");
+
+    List<Estudiante> estudiantes = JsonHelper.LeerDesdeJson<Estudiante>(rutaArchivo);
+    
+    // Filtrar los estudiantes que aún no participaron
+    var noParticiparon = estudiantes.Where(e => !e.Participo).ToList();
+
+    if (noParticiparon.Count == 0)
+    {
+        // Si todos participaron, reiniciar la lista
+        Console.WriteLine("Todos los estudiantes ya participaron. Se reiniciará el ciclo.");
+        foreach (var estudiante in estudiantes)
+        {
+            estudiante.Participo = false;
+        }
+        JsonHelper.GuardarEnJson(estudiantes, rutaArchivo);
+        noParticiparon = estudiantes;
+    }
+
+    // Seleccionar un estudiante aleatorio
+    Random random = new Random();
+    Estudiante seleccionado = noParticiparon[random.Next(noParticiparon.Count)];
+
+    Console.WriteLine($"\n🎉 Estudiante seleccionado: {seleccionado.Nombre} {seleccionado.Apellido}");
+    Console.WriteLine($"DNI: {seleccionado.DNI}");
+    Console.WriteLine($"Correo: {seleccionado.Correo}");
+
+    // Confirmar si participó
+    Console.Write("\n¿Este estudiante pasó al pizarrón? (SI/NO): ");
+    string confirmacion = Console.ReadLine().ToUpper();
+
+    if (confirmacion == "SI")
+    {
+        seleccionado.Participo = true;
+        JsonHelper.GuardarEnJson(estudiantes, rutaArchivo);
+        Console.WriteLine("Estudiante marcado como 'Participó'.");
+    }
+    else
+    {
+        Console.WriteLine("Este estudiante quedará como prioridad para el próximo sorteo.");
+    }
+}
+
 
 
     }
