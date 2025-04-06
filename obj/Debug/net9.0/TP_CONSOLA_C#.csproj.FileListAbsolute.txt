@@ -15,3 +15,4 @@ C:\Users\leand\OneDrive\Escritorio\Visual Studio Codee\Tecnicatura\Programacion3
 C:\Users\leand\OneDrive\Escritorio\Visual Studio Codee\Tecnicatura\Programacion3\TP_CONSOLA_C#\obj\Debug\net9.0\TP_CONSOLA_C#.pdb
 C:\Users\leand\OneDrive\Escritorio\Visual Studio Codee\Tecnicatura\Programacion3\TP_CONSOLA_C#\obj\Debug\net9.0\TP_CONSOLA_C#.genruntimeconfig.cache
 C:\Users\leand\OneDrive\Escritorio\Visual Studio Codee\Tecnicatura\Programacion3\TP_CONSOLA_C#\obj\Debug\net9.0\ref\TP_CONSOLA_C#.dll
+C:\Users\leand\OneDrive\Escritorio\Visual Studio Codee\Tecnicatura\Programacion3\TP_CONSOLA_C#\obj\Debug\net9.0\TP_CONSOLA_C#.sourcelink.json

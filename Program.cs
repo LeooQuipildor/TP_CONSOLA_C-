@@ -13,7 +13,8 @@ class Program
             Console.WriteLine("3. Modificar estudiante");
             Console.WriteLine("4. Eliminar estudiante");
             Console.WriteLine("5. Sorteo de estudiante");
-            Console.WriteLine("6. Salir");
+            Console.WriteLine("6. Crear grupo"); // <--- Nueva opción
+            Console.WriteLine("7. Salir");
             Console.Write("Seleccione una opción: ");
             string opcion = Console.ReadLine();
             Console.Clear();
@@ -36,14 +37,14 @@ class Program
                     EstudiantesFuncionalidades.SorteoEstudiante();
                     break;
                 case "6":
+                    GruposFuncionalidades.CrearGrupo(); // <--- Llama al método que hicimos
+                    break;
+                case "7":
                     return;
                 default:
                     Console.WriteLine("Opción inválida.");
                     break;
             }
-
-
         }
     }
 }
-

@@ -1,0 +1,14 @@
+[
+  {
+    "CodigoGrupo": "1",
+    "DnisEstudiantes": [],
+    "YaParticipóEnSorteo": false
+  },
+  {
+    "CodigoGrupo": "2",
+    "DnisEstudiantes": [
+      "43527537"
+    ],
+    "YaParticipóEnSorteo": false
+  }
+]

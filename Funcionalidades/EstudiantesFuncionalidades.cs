@@ -2,12 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Utilidades;
+using System.Text.Json;
+
 
 namespace Funcionalidades
 {
     public static class EstudiantesFuncionalidades
     {
         private static string rutaArchivo = "Datos/estudiantes.json";
+
 
         public static void AltaEstudiante()
         {
@@ -304,6 +307,7 @@ namespace Funcionalidades
         Console.WriteLine("Este estudiante quedará como prioridad para el próximo sorteo.");
     }
 }
+
 
 
 
