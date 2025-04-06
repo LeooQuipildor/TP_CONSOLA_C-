@@ -13,7 +13,7 @@ class Program
             Console.WriteLine("3. Modificar estudiante");
             Console.WriteLine("4. Eliminar estudiante");
             Console.WriteLine("5. Sorteo de estudiante");
-            Console.WriteLine("6. Crear grupo"); // <--- Nueva opción
+            Console.WriteLine("6. Gestión de grupos");
             Console.WriteLine("7. Salir");
             Console.Write("Seleccione una opción: ");
             string opcion = Console.ReadLine();
@@ -37,7 +37,7 @@ class Program
                     EstudiantesFuncionalidades.SorteoEstudiante();
                     break;
                 case "6":
-                    GruposFuncionalidades.CrearGrupo(); // <--- Llama al método que hicimos
+                    MenuGrupos();
                     break;
                 case "7":
                     return;
@@ -47,4 +47,61 @@ class Program
             }
         }
     }
+
+    static void MenuGrupos()
+{
+    while (true)
+    {
+        Console.Clear();
+        Console.WriteLine("====== MENÚ DE GRUPOS ======");
+        Console.WriteLine("1. Crear Grupo");
+        Console.WriteLine("2. Modificar Grupo");
+        Console.WriteLine("3. Mover Estudiante de Grupo");
+        Console.WriteLine("4. Eliminar Grupo");
+        Console.WriteLine("5. Mostrar Todos los Grupos");
+        Console.WriteLine("6. Estudiantes sin Grupo");
+        Console.WriteLine("7. Grupos Incompletos (< 6 estudiantes)");
+        Console.WriteLine("8. Realizar Sorteo por Grupo");
+        Console.WriteLine("0. Volver al Menú Principal");
+        Console.Write("Seleccione una opción: ");
+        string opcion = Console.ReadLine();
+
+        switch (opcion)
+        {
+            case "1":
+                GruposFuncionalidades.CrearGrupo();
+                break;
+            case "2":
+                GruposFuncionalidades.ModificarGrupo();
+                break;
+            case "3":
+                GruposFuncionalidades.MoverEstudiante();
+                break;
+            case "4":
+                GruposFuncionalidades.EliminarGrupo();
+                break;
+            case "5":
+                GruposFuncionalidades.MostrarTodosLosGrupos();
+                break;
+            case "6":
+                GruposFuncionalidades.EstudiantesSinGrupo();
+                break;
+            case "7":
+                GruposFuncionalidades.GruposIncompletos();
+                break;
+            case "8":
+                GruposFuncionalidades.SorteoGrupo();
+                break;
+            case "0":
+                return;
+            default:
+                Console.WriteLine("Opción inválida. Presione una tecla para continuar.");
+                Console.ReadKey();
+                break;
+        }
+
+        Console.WriteLine("\nPresione una tecla para continuar...");
+        Console.ReadKey();
+    }
+}
 }
