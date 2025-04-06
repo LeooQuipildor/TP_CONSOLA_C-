@@ -4,7 +4,7 @@
     "Apellido": "Quipildor",
     "Nombre": "Leandro",
     "Correo": "leoooquipildor@gmail.com",
-    "Grupo": null,
+    "Grupo": "1",
     "Participo": false
   },
   {
@@ -13,6 +13,14 @@
     "Nombre": "Fabricio",
     "Correo": "fabritoranzo@gmail.com",
     "Grupo": "Sin asignar",
+    "Participo": false
+  },
+  {
+    "DNI": "1",
+    "Apellido": "Toranzo Fabricio",
+    "Nombre": "Fabricio",
+    "Correo": "fabritoranzo@gmail.com",
+    "Grupo": "1",
     "Participo": false
   }
 ]

@@ -1,0 +1,17 @@
+[
+  {
+    "Fecha": "12/12/2025",
+    "CodigoGrupo": "1",
+    "EstadoPorDni": {
+      "43527537": true
+    }
+  },
+  {
+    "Fecha": "13/12/2025",
+    "CodigoGrupo": "1",
+    "EstadoPorDni": {
+      "43527537": true,
+      "1": false
+    }
+  }
+]
